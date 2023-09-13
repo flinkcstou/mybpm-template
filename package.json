@@ -83,6 +83,6 @@
     "typescript": "~4.9.5"
   },
   "stackblitz": {
-    "startCommand": "npm config set legacy-peer-deps true && npm install && nx serve"
+    "startCommand": "npm config set legacy-peer-deps true"
   }
 }
