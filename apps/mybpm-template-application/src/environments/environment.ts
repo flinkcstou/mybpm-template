@@ -4,11 +4,11 @@
 
 import { EnvironmentConfig } from '@ngx-kz/mybpm-models';
 
-const WORK_PC = 'https://core.mybpm.kz';
+const WORK_PC = 'https://core2.mybpm.kz';
 const LOCAL_PC = location.protocol + '//' + location.hostname + ':1313';
 
 export const environment: EnvironmentConfig = {
-  urlPrefix: LOCAL_PC,
+  urlPrefix: WORK_PC,
   production: false,
   selenideTest: false,
 };
