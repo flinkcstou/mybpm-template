@@ -17,9 +17,17 @@
         "tsConfig": "apps/mybpm-template-application/tsconfig.app.json",
         "assets": [
           "apps/mybpm-template-application/src/favicon.ico",
-          "apps/mybpm-template-application/src/assets"
+          "apps/mybpm-template-application/src/assets",
+          {
+            "glob": "**/*",
+            "input": "node_modules/@ngx-kz/icons/src/assets/",
+            "output": "./assets/"
+          }
+
         ],
-        "styles": ["apps/mybpm-template-application/src/styles.scss"],
+        "styles": ["apps/mybpm-template-application/src/styles.scss",
+          "./node_modules/@ngx-kz/notifications/src/styles/toastr-styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -28,7 +36,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "5mb"
             },
             {
               "type": "anyComponentStyle",
