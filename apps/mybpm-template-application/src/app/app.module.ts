@@ -18,6 +18,8 @@ import { NotificationsModule } from '@ngx-kz/notifications';
 import { PopoverModule } from '@ngx-kz/popover';
 import { ConfirmFormModule } from '@ngx-kz/confirm-form';
 import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
+import { FolderPathModule } from './pages/folder-path/folder-path.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -50,6 +52,8 @@ import { environment } from '../environments/environment';
     ConfirmFormModule,
     PopoverModule,
     LoginModule,
+    FormsModule,
+    FolderPathModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
